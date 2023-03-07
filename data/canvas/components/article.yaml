@@ -1,0 +1,24 @@
+id: article
+name: Article (Template)
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1677156271/vNext%20Demos/Baseline/canvas-preview/Article_nkhuep.png
+parameters:
+  - id: content
+    name: content
+    type: contentfulEntry
+    helpText: >-
+      This is an example of how the article will look when you go to it from the
+      Articles page
+    typeConfig:
+      source: default
+      required: true
+      allowedContentTypes:
+        article:
+          id: article
+          name: Article
+useTeamPermissions: true
+slots: []
+titleParameter: content
+canBeComposition: false
+created: '2023-03-06T13:37:16.566152+00:00'
+updated: '2023-03-07T07:52:44.593768+00:00'

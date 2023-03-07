@@ -1,0 +1,22 @@
+composition:
+  _name: Article (Template)
+  _id: deae2572-3a0d-4ea2-9425-66bda9aa91a0
+  _slug: article-slug
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Article
+  slots:
+    content:
+      - _id: 00eb0728-e689-442f-8093-bf84f10a1485
+        type: article
+        parameters:
+          content:
+            type: contentfulEntry
+            value:
+              source: default
+              entryId: 3Ef14UCreD8Uyk23FZkq4Y
+created: '2023-02-27T16:36:13.999695+00:00'
+modified: '2023-02-27T16:54:14.823254+00:00'
+pattern: false

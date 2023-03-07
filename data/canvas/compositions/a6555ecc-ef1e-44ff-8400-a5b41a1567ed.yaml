@@ -1,0 +1,28 @@
+composition:
+  _name: Articles
+  _id: a6555ecc-ef1e-44ff-8400-a5b41a1567ed
+  _slug: articles
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Articles
+  slots:
+    content:
+      - _id: a0fbd5f0-9bcb-462b-ab27-46876f7e6df3
+        type: articlesList
+        parameters:
+          title:
+            type: text
+            value: Articles
+          content:
+            type: contentfulQuery
+            value:
+              count: 48
+              sortBy: sys.updatedAt
+              source: default
+              sortOrder: asc
+              contentType: article
+created: '2023-02-22T10:21:54.129638+00:00'
+modified: '2023-03-03T12:27:48.573079+00:00'
+pattern: false

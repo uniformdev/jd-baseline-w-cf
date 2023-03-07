@@ -1,0 +1,5235 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "article",
+        "type": "ContentType",
+        "createdAt": "2023-02-21T20:56:43.154Z",
+        "updatedAt": "2023-02-21T20:57:01.829Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-02-21T20:57:01.829Z",
+        "firstPublishedAt": "2023-02-21T20:56:43.652Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Article",
+      "description": "",
+      "fields": [
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "thumbnail",
+          "name": "Thumbnail",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code"
+              ],
+              "message": "Only bold, italic, underline, and code marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "hero",
+        "type": "ContentType",
+        "createdAt": "2023-03-03T11:23:55.837Z",
+        "updatedAt": "2023-03-03T11:23:56.217Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-03-03T11:23:56.217Z",
+        "firstPublishedAt": "2023-03-03T11:23:56.217Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Hero",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "buttonCopy",
+          "name": "Button Copy",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "buttonLink",
+          "name": "Button Link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "backgroundImage",
+          "name": "Background Image",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "callToAction",
+        "type": "ContentType",
+        "createdAt": "2023-03-03T11:37:26.316Z",
+        "updatedAt": "2023-03-03T11:37:26.697Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-03-03T11:37:26.697Z",
+        "firstPublishedAt": "2023-03-03T11:37:26.697Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Call to Action",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "text",
+          "name": "Text",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "buttonCopy",
+          "name": "Button Copy",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "buttonLink",
+          "name": "Button Link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "accordion",
+        "type": "ContentType",
+        "createdAt": "2023-03-03T11:42:30.080Z",
+        "updatedAt": "2023-03-03T11:42:30.466Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-03-03T11:42:30.466Z",
+        "firstPublishedAt": "2023-03-03T11:42:30.466Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Accordion",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "accordionItem",
+        "type": "ContentType",
+        "createdAt": "2023-03-03T11:45:48.873Z",
+        "updatedAt": "2023-03-03T11:45:49.254Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-03-03T11:45:49.254Z",
+        "firstPublishedAt": "2023-03-03T11:45:49.254Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Accordion Item",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "contactForm",
+        "type": "ContentType",
+        "createdAt": "2023-03-03T11:50:01.537Z",
+        "updatedAt": "2023-03-03T11:50:01.911Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-03-03T11:50:01.911Z",
+        "firstPublishedAt": "2023-03-03T11:50:01.911Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "displayField": "submitButtonText",
+      "name": "Contact Form",
+      "description": "",
+      "fields": [
+        {
+          "id": "submitButtonText",
+          "name": "Submit Button Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "successfulSubmitText",
+          "name": "Successful Submit Text",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "errorSubmitText",
+          "name": "Error Submit Text",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "successfulSubmitImage",
+          "name": "Successful Submit Image",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "errorSubmitImage",
+          "name": "Error Submit Image",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "featuredCallout",
+        "type": "ContentType",
+        "createdAt": "2023-03-03T12:12:55.655Z",
+        "updatedAt": "2023-03-03T12:12:56.009Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2023-03-03T12:12:56.009Z",
+        "firstPublishedAt": "2023-03-03T12:12:56.009Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Featured Callout",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "buttonCopy",
+          "name": "Button Copy",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "buttonLink",
+          "name": "Button Link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4v9xo98brk8z",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 6,
+        "createdAt": "2023-02-21T20:56:43.806Z",
+        "createdBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-02-21T20:57:02.833Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "article",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "slug",
+          "settings": {
+            "trackingFieldId": "title"
+          },
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "thumbnail",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "content",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4v9xo98brk8z",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-03-03T11:23:56.359Z",
+        "createdBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-03-03T11:23:57.241Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "hero",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "subtitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "buttonCopy",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "buttonLink",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "backgroundImage",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4v9xo98brk8z",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-03-03T11:37:26.820Z",
+        "createdBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-03-03T11:37:27.448Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "callToAction",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "text",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "buttonCopy",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "buttonLink",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4v9xo98brk8z",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-03-03T11:42:30.552Z",
+        "createdBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-03-03T11:42:31.225Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "accordion",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4v9xo98brk8z",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-03-03T11:45:49.352Z",
+        "createdBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-03-03T11:45:49.955Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "accordionItem",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4v9xo98brk8z",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-03-03T11:50:02.048Z",
+        "createdBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-03-03T11:50:02.718Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "contactForm",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "submitButtonText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "successfulSubmitText",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "errorSubmitText",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "successfulSubmitImage",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "errorSubmitImage",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "4v9xo98brk8z",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2023-03-03T12:12:56.129Z",
+        "createdBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2023-03-03T12:12:56.659Z",
+        "updatedBy": {
+          "sys": {
+            "id": "3LjDuoo7YdzImb1eOwQeBv",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "featuredCallout",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "buttonCopy",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "buttonLink",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "p9cRDL4wnVWieFwMYX4NL",
+        "type": "Entry",
+        "createdAt": "2023-02-21T20:57:56.811Z",
+        "updatedAt": "2023-02-21T21:01:44.506Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2023-02-21T21:01:44.506Z",
+        "firstPublishedAt": "2023-02-21T21:01:23.130Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "article"
+          }
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-US": "how-to-find-the-perfect-cup-without-leaving-your-home"
+        },
+        "title": {
+          "en-US": "How to find the perfect cup without leaving your home"
+        },
+        "description": {
+          "en-US": "Arabica Acerbic Affogato Aftertaste Aged Americano And, Aroma mazagran that Black Blue turkish extra, filter cup plunger aged aroma. "
+        },
+        "thumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "17eATDg5fcEPk6fEECSFrG"
+            }
+          }
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Arabica Acerbic Affogato Aftertaste Aged Americano And, Aroma mazagran that Black Blue turkish extra, filter cup plunger aged aroma. And single spoon milk decaffeinated Aroma breve cup dark organic saucer, Bar Affogato Beans wings caramelization Arabica pumpkin that. Skinny flavour roast aftertaste affogato Affogato Aromatic cultivar mazagran wings mocha viennese, whipped spoon caramelization organic decaffeinated irish cream Bar beans dark est, grounds Aroma crema Con filter pumpkin iced Beans robust java. Medium instant sit filter Americano press Aroma iced barista cultivar, americano con caffeine irish Con that Barista. Bar strong aged espresso french kopi-luwak seasonal plunger at white Barista, macchiato mountain flavour spice barista caramelization mocha Americano to, cream milk mug dark spoon acerbic grinder irish affogato.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "17eATDg5fcEPk6fEECSFrG",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Iced extra mocha panna Affogato Black aftertaste doppio white aromatic, rich Aroma strong foam barista Con in that milk, Body aroma plunger roast coffee Brewed lait turkish beans. Et Body grounds sugar viennese americano Blue cinnamon, aged Aromatic robusta froth arabica saucer bar, seasonal extraction Beans redeye iced Americano. Blue con  cream At Aftertaste mug Con aroma acerbic, As steamed Blue grounds doppio shop arabica grinder, filter foam ristretto aged siphon bar strong qui. Turkish siphon cup panna Arabica ut, con mazagran robusta Aged arabica, aroma qui And pump",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "5l6sBa3LeMpmc7WirKVEWH",
+        "type": "Entry",
+        "createdAt": "2023-02-21T21:01:57.321Z",
+        "updatedAt": "2023-02-21T21:03:03.368Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2023-02-21T21:03:03.368Z",
+        "firstPublishedAt": "2023-02-21T21:03:03.368Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "article"
+          }
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-US": "how-to-brew-a-proper-cuppa"
+        },
+        "title": {
+          "en-US": "How to brew a proper cuppa'"
+        },
+        "description": {
+          "en-US": "A Brit's guide to the national drink"
+        },
+        "thumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6JeZz17jVwL0R5AsAEhGsm"
+            }
+          }
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Kombucha nilgiri white london fog latte loose leaf lemongrass oolong tea gyokuro tea time rooibos focus boba. London fog nilgiri sencha hojicha infusion green oolong lapsang souchong mint tea kettle. Antioxidant bamboo whisk tisane boba nilgiri orange pekoe loose leaf hong kong-style milk keemun gaiwan herbal zen. Herbal pu’erh fair trade black assam guayusa nokcha shincha bamboo whisk guayusa scented camellia sinensis focus steep. Taro ginger assam mint lapsang souchong rooibos irish breakfast hojicha tea time taro rize earl grey camellia sinensis camellia sinensis.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "6JeZz17jVwL0R5AsAEhGsm",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Kombucha nilgiri white london fog latte loose leaf lemongrass oolong tea gyokuro tea time rooibos focus boba. London fog nilgiri sencha hojicha infusion green oolong lapsang souchong mint tea kettle. Antioxidant bamboo whisk tisane boba nilgiri orange pekoe loose leaf hong kong-style milk keemun gaiwan herbal zen. Herbal pu’erh fair trade black assam guayusa nokcha shincha bamboo whisk guayusa scented camellia sinensis focus steep. Taro ginger assam mint lapsang souchong rooibos irish breakfast hojicha tea time taro rize earl grey camellia sinensis camellia sinensis.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Kombucha nilgiri white london fog latte loose leaf lemongrass oolong tea gyokuro tea time rooibos focus boba. London fog nilgiri sencha hojicha infusion green oolong lapsang souchong mint tea kettle. Antioxidant bamboo whisk tisane boba nilgiri orange pekoe loose leaf hong kong-style milk keemun gaiwan herbal zen. Herbal pu’erh fair trade black assam guayusa nokcha shincha bamboo whisk guayusa scented camellia sinensis focus steep. Taro ginger assam mint lapsang souchong rooibos irish breakfast hojicha tea time taro rize earl grey camellia sinensis camellia sinensis.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "2IMufn0JMgS9z2qLPmYlbq",
+        "type": "Entry",
+        "createdAt": "2023-02-21T21:03:19.602Z",
+        "updatedAt": "2023-02-21T21:04:15.565Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-02-21T21:04:15.565Z",
+        "firstPublishedAt": "2023-02-21T21:04:15.565Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "article"
+          }
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-US": "the-right-bean-for-pour-over-coffee-makers"
+        },
+        "title": {
+          "en-US": "The right bean for pour-over coffee makers"
+        },
+        "description": {
+          "en-US": "What type of coffee bean and grind should you use when making pour-over coffee? Does it make a difference?"
+        },
+        "thumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "73713ftmlPdqamsa2PORzK"
+            }
+          }
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "What type of coffee bean and grind should you use when making pour-over coffee? Does it make a difference? The short answer: yes, yes it does. Read more about what kinds of beans to select and how to grind them. ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "73713ftmlPdqamsa2PORzK",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "For pour over coffee, the best grind to use is a medium-coarse grind.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "A medium-coarse grind will be similar in size to a French press grind but less chunky and will feel slightly smoother. If you are using a cone-shaped pour over, then use a medium-fine coffee grind instead.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Since there are many different pour over brewers, each one will need a slightly different grind. You may need to experiment a bit more with this method until you find what tastes best for you.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Keep in mind: the less time the water is in contact with the coffee grind, the finer the grind should be.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "5HW58j5RSdhGKGjxZeCnUl",
+        "type": "Entry",
+        "createdAt": "2023-02-21T21:04:32.868Z",
+        "updatedAt": "2023-02-21T21:05:15.432Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-02-21T21:05:15.432Z",
+        "firstPublishedAt": "2023-02-21T21:05:15.432Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "article"
+          }
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-US": "how-to-get-the-perfect-grind-for-your-beans"
+        },
+        "title": {
+          "en-US": "How to get the perfect grind for your beans"
+        },
+        "description": {
+          "en-US": "Cappuccino as Bar decaffeinated Beans carajillo aged extra, redeye ut Black aroma Aromatic As Aftertaste, single au barista Arabica bar aftertaste."
+        },
+        "thumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1BqjTT7VUdIg4lHOqjOaw4"
+            }
+          }
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Arabica Acerbic Affogato Aftertaste Aged Americano And, Aroma As skinny dripper that bar, Con iced percolator au chicory. Cappuccino as Bar decaffeinated Beans carajillo aged extra, redeye ut Black aroma Aromatic As Aftertaste, single au barista Arabica bar aftertaste. Black Blue milk Arabica filter trade As acerbic carajillo rich, and organic cup cream single mazagran breve pot beans flavour, as mug kopi-luwak id chicory medium aroma cappuccino. Mocha foam caramelization grinder coffee cultivar americano seasonal instant Bar Black pumpkin wings Aged milk eu, roast press And aromatic trade Barista shot robust doppio chicory medium frappuccino beans Americano. Irish beans Body Aged whipped sit skinny turkish lungo organic ristretto, medium americano Aftertaste shop aftertaste Au macchiato foam. Variety americano Arabica kopi-luwak ristretto robusta aromatic spice con Aged, aftertaste skinny Aftertaste Americano barista instant viennese strong Cappuccino, cortado cream turkish sweet robust origin spoon Barista.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "1BqjTT7VUdIg4lHOqjOaw4",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Arabica Acerbic Affogato Aftertaste Aged Americano And, Aroma As skinny dripper that bar, Con iced percolator au chicory. Cappuccino as Bar decaffeinated Beans carajillo aged extra, redeye ut Black aroma Aromatic As Aftertaste, single au barista Arabica bar aftertaste. Black Blue milk Arabica filter trade As acerbic carajillo rich, and organic cup cream single mazagran breve pot beans flavour, as mug kopi-luwak id chicory medium aroma cappuccino. Mocha foam caramelization grinder coffee cultivar americano seasonal instant Bar Black pumpkin wings Aged milk eu, roast press And aromatic trade Barista shot robust doppio chicory medium frappuccino beans Americano. Irish beans Body Aged whipped sit skinny turkish lungo organic ristretto, medium americano Aftertaste shop aftertaste Au macchiato foam. Variety americano Arabica kopi-luwak ristretto robusta aromatic spice con Aged, aftertaste skinny Aftertaste Americano barista instant viennese strong Cappuccino, cortado cream turkish sweet robust origin spoon Barista.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "2gKZXdEBmyOc4bmVGt7ZlU",
+        "type": "Entry",
+        "createdAt": "2023-02-21T21:05:29.076Z",
+        "updatedAt": "2023-02-21T21:06:22.993Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2023-02-21T21:06:22.993Z",
+        "firstPublishedAt": "2023-02-21T21:06:22.993Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "article"
+          }
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-US": "my-first-day-with-cervello-di-caffe"
+        },
+        "title": {
+          "en-US": "My first day with Cervello di Caffè."
+        },
+        "description": {
+          "en-US": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique interdum nisl, sed egestas lorem tincidunt et."
+        },
+        "thumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "672UDG3HsRwDy3XXssqcUI"
+            }
+          }
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique interdum nisl, sed egestas lorem tincidunt et. Nullam quis leo gravida justo euismod lobortis. Nunc mi massa, elementum eu odio et, ultrices malesuada sapien. Ut porttitor metus nisl, nec rhoncus eros malesuada a. Maecenas a tellus pellentesque, laoreet est ac, luctus est. Vivamus tincidunt hendrerit urna, vel rutrum lacus commodo at. In eu ipsum nisl. Duis massa odio, condimentum condimentum quam a, gravida dignissim est. Donec condimentum, magna vitae bibendum congue, libero est imperdiet lorem, vel tristique metus arcu eget sem. Maecenas laoreet ligula sed fringilla elementum. Pellentesque aliquam lobortis metus, id tristique arcu. Nam non fermentum purus. Vivamus nisi metus, ornare eget nibh et, condimentum hendrerit odio. Fusce tempus at elit eu sollicitudin. Vestibulum eget enim sed ligula ultricies ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "672UDG3HsRwDy3XXssqcUI",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Suspendisse vitae quam sit amet elit volutpat varius quis vel nisl. Nam aliquam et nisl id gravida. Vivamus non lacus vel quam tincidunt bibendum. In vel mattis nibh. Sed egestas dolor ac metus scelerisque pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean dapibus vestibulum dolor. Cras pharetra mauris eget orci blandit scelerisque. Mauris viverra odio ut diam fringilla vestibulum. Curabitur lobortis condimentum tincidunt. Integer eu viverra lectus. Integer posuere gravida nisi. Fusce fringilla nisi nulla, nec convallis mi rhoncus vitae. Quisque efficitur lectus eros, nec sollicitudin tortor sollicitudin nec.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Subtitle style is here ",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla placerat quis arcu quis varius. Etiam urna turpis, semper id consequat sed, aliquam ut risus. Morbi tempus diam enim, a porta leo varius a. Pellentesque cursus, erat quis volutpat feugiat, velit libero tempor tellus, sit amet sagittis est orci sed nulla. Etiam tincidunt elit nibh, et tempor ipsum pellentesque nec. Vivamus ac euismod orci. In hac habitasse platea dictumst. Vestibulum id consequat nisi, nec hendrerit nisi. Sed sit amet orci nec diam vestibulum efficitur. Curabitur condimentum condimentum venenatis. In ac venenatis orci, at commodo purus. Sed et quam elementum, varius leo vitae, tempus massa. Sed id viverra tortor. Phasellus interdum, eros id pellentesque pulvinar, eros nisi facilisis dui, sit amet sollicitudin elit augue eu dolor. Quisque aliquam orci massa, tempus cursus eros accumsan sit amet.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "5x1SBffE9hTTr2WqgF06bF",
+        "type": "Entry",
+        "createdAt": "2023-02-21T21:06:34.918Z",
+        "updatedAt": "2023-02-21T21:07:48.739Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2023-02-21T21:07:48.739Z",
+        "firstPublishedAt": "2023-02-21T21:07:48.739Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "article"
+          }
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-US": "cervello-di-caffe-accessories"
+        },
+        "title": {
+          "en-US": "Cervello di Caffè Accessories"
+        },
+        "description": {
+          "en-US": "Mazagran, est mazagran trifecta extra  americano aromatic cup et barista. Extra  eu, beans mug trifecta, single shot cinnamon roast ristretto acerbic white variety. "
+        },
+        "thumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "9ycAAKTDlqMpsXpgBv0r0"
+            }
+          }
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Mazagran, est mazagran trifecta extra  americano aromatic cup et barista. Extra  eu, beans mug trifecta, single shot cinnamon roast ristretto acerbic white variety. Brewed single origin, barista, espresso barista aged, strong cortado ut instant blue mountain grinder. Barista froth cup, chicory seasonal crema arabica dark fair trade. Single shot rich mug steamed cup variety extraction sugar.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "3v7mxnCikGsK0ODJnpSzpM",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Body sugar, brewed, frappuccino sit, seasonal foam french press beans id single shot extraction. Est, eu carajillo, french press galão, decaffeinated shop decaffeinated redeye caramelization decaffeinated. Barista spoon, cup, cup black trifecta, saucer wings caffeine kopi-luwak filter kopi-luwak. Java dripper arabica grounds, crema grinder saucer instant percolator caramelization siphon. Espresso single origin and robusta carajillo latte robust con panna macchiato lungo.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "4m40Y7SWNhyqcioflXuLrW",
+        "type": "Entry",
+        "createdAt": "2023-02-21T21:11:59.094Z",
+        "updatedAt": "2023-02-21T21:13:03.342Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2023-02-21T21:13:03.342Z",
+        "firstPublishedAt": "2023-02-21T21:13:03.342Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "article"
+          }
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-US": "is-the-slow-drip-coffee-maker-for-you"
+        },
+        "title": {
+          "en-US": "Is the slow drip coffee maker for you?"
+        },
+        "description": {
+          "en-US": "Is the slow drip actually making better coffee? Or is it just some hipster thing that doesn’t really matter?"
+        },
+        "thumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7lMfD8fBdHxNKFjPO4aQSW"
+            }
+          }
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Is the slow drip actually making better coffee? Or is it just some hipster thing that doesn’t really matter?",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed blandit libero volutpat.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "7lMfD8fBdHxNKFjPO4aQSW",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed blandit libero volutpat.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Orci eu lobortis elementum nibh tellus molestie. Vulputate dignissim suspendisse in est. Vel pharetra vel turpis nunc. Malesuada nunc vel risus commodo. Nisi vitae suscipit tellus mauris. Posuere morbi leo urna molestie at elementum eu. Urna duis convallis convallis tellus. Urna molestie at elementum eu. Nunc sed blandit libero volutpat.\n",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "5y6SO6Wx7t6EY5RPvQX1kx",
+        "type": "Entry",
+        "createdAt": "2023-02-21T21:13:13.334Z",
+        "updatedAt": "2023-02-21T21:15:30.556Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2023-02-21T21:15:30.556Z",
+        "firstPublishedAt": "2023-02-21T21:15:30.556Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "article"
+          }
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-US": "meet-the-experts"
+        },
+        "title": {
+          "en-US": "Meet the experts"
+        },
+        "description": {
+          "en-US": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique interdum nisl, sed egestas lorem tincidunt et."
+        },
+        "thumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "PGsh7il3fQHCJLyfv7Q8h"
+            }
+          }
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique interdum nisl, sed egestas lorem tincidunt et. Nullam quis leo gravida justo euismod lobortis. Nunc mi massa, elementum eu odio et, ultrices malesuada sapien. Ut porttitor metus nisl, nec rhoncus eros malesuada a. Maecenas a tellus pellentesque, laoreet est ac, luctus est. Vivamus tincidunt hendrerit urna, vel rutrum lacus commodo at. In eu ipsum nisl. Duis massa odio, condimentum condimentum quam a, gravida dignissim est. Donec condimentum, magna vitae bibendum congue, libero est imperdiet lorem, vel tristique metus arcu eget sem. Maecenas laoreet ligula sed fringilla elementum. Pellentesque aliquam lobortis metus, id tristique arcu. Nam non fermentum purus. Vivamus nisi metus, ornare eget nibh et, condimentum hendrerit odio. Fusce tempus at elit eu sollicitudin. Vestibulum eget enim sed ligula ultricies ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "2rUiIQNX4dxCS8qclCMjcF",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Suspendisse vitae quam sit amet elit volutpat varius quis vel nisl. Nam aliquam et nisl id gravida. Vivamus non lacus vel quam tincidunt bibendum. In vel mattis nibh. Sed egestas dolor ac metus scelerisque pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean dapibus vestibulum dolor. Cras pharetra mauris eget orci blandit scelerisque. Mauris viverra odio ut diam fringilla vestibulum. Curabitur lobortis condimentum tincidunt. Integer eu viverra lectus. Integer posuere gravida nisi. Fusce fringilla nisi nulla, nec convallis mi rhoncus vitae. Quisque efficitur lectus eros, nec sollicitudin tortor sollicitudin nec.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Subtitle style is here",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": " Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla placerat quis arcu quis varius. Etiam urna turpis, semper id consequat sed, aliquam ut risus. Morbi tempus diam enim, a porta leo varius a. Pellentesque cursus, erat quis volutpat feugiat, velit libero tempor tellus, sit amet sagittis est orci sed nulla. Etiam tincidunt elit nibh, et tempor ipsum pellentesque nec. Vivamus ac euismod orci. In hac habitasse platea dictumst. Vestibulum id consequat nisi, nec hendrerit nisi. Sed sit amet orci nec diam vestibulum efficitur. Curabitur condimentum condimentum venenatis. In ac venenatis orci, at commodo purus. Sed et quam elementum, varius leo vitae, tempus massa. Sed id viverra tortor. Phasellus interdum, eros id pellentesque pulvinar, eros nisi facilisis dui, sit amet sollicitudin elit augue eu dolor. Quisque aliquam orci massa, tempus cursus eros accumsan sit amet.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "3Ef14UCreD8Uyk23FZkq4Y",
+        "type": "Entry",
+        "createdAt": "2023-02-21T21:15:40.464Z",
+        "updatedAt": "2023-02-21T21:16:37.257Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2023-02-21T21:16:37.257Z",
+        "firstPublishedAt": "2023-02-21T21:16:37.257Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "article"
+          }
+        }
+      },
+      "fields": {
+        "slug": {
+          "en-US": "from-roma-with-love"
+        },
+        "title": {
+          "en-US": "From Roma with love"
+        },
+        "description": {
+          "en-US": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique interdum nisl, sed egestas lorem tincidunt et."
+        },
+        "thumbnail": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1YyVIDRYgc9q9nmzvmt9a8"
+            }
+          }
+        },
+        "content": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique interdum nisl, sed egestas lorem tincidunt et. Nullam quis leo gravida justo euismod lobortis. Nunc mi massa, elementum eu odio et, ultrices malesuada sapien. Ut porttitor metus nisl, nec rhoncus eros malesuada a. Maecenas a tellus pellentesque, laoreet est ac, luctus est. Vivamus tincidunt hendrerit urna, vel rutrum lacus commodo at. In eu ipsum nisl. Duis massa odio, condimentum condimentum quam a, gravida dignissim est. Donec condimentum, magna vitae bibendum congue, libero est imperdiet lorem, vel tristique metus arcu eget sem. Maecenas laoreet ligula sed fringilla elementum. Pellentesque aliquam lobortis metus, id tristique arcu. Nam non fermentum purus. Vivamus nisi metus, ornare eget nibh et, condimentum hendrerit odio. Fusce tempus at elit eu sollicitudin. Vestibulum eget enim sed ligula ultricies ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "1YyVIDRYgc9q9nmzvmt9a8",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Suspendisse vitae quam sit amet elit volutpat varius quis vel nisl. Nam aliquam et nisl id gravida. Vivamus non lacus vel quam tincidunt bibendum. In vel mattis nibh. Sed egestas dolor ac metus scelerisque pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean dapibus vestibulum dolor. Cras pharetra mauris eget orci blandit scelerisque. Mauris viverra odio ut diam fringilla vestibulum. Curabitur lobortis condimentum tincidunt. Integer eu viverra lectus. Integer posuere gravida nisi. Fusce fringilla nisi nulla, nec convallis mi rhoncus vitae. Quisque efficitur lectus eros, nec sollicitudin tortor sollicitudin nec.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "heading-2",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Subtitle style is here",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": " Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla placerat quis arcu quis varius. Etiam urna turpis, semper id consequat sed, aliquam ut risus. Morbi tempus diam enim, a porta leo varius a. Pellentesque cursus, erat quis volutpat feugiat, velit libero tempor tellus, sit amet sagittis est orci sed nulla. Etiam tincidunt elit nibh, et tempor ipsum pellentesque nec. Vivamus ac euismod orci. In hac habitasse platea dictumst. Vestibulum id consequat nisi, nec hendrerit nisi. Sed sit amet orci nec diam vestibulum efficitur. Curabitur condimentum condimentum venenatis. In ac venenatis orci, at commodo purus. Sed et quam elementum, varius leo vitae, tempus massa. Sed id viverra tortor. Phasellus interdum, eros id pellentesque pulvinar, eros nisi facilisis dui, sit amet sollicitudin elit augue eu dolor. Quisque aliquam orci massa, tempus cursus eros accumsan sit amet.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "6eVTFdis6ixVh7Kch4eFZH",
+        "type": "Entry",
+        "createdAt": "2023-03-03T11:24:05.793Z",
+        "updatedAt": "2023-03-03T11:27:26.793Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2023-03-03T11:27:26.793Z",
+        "firstPublishedAt": "2023-03-03T11:27:26.793Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "hero"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Contact us for details"
+        },
+        "buttonCopy": {
+          "en-US": "Contact us"
+        },
+        "buttonLink": {
+          "en-US": "/contact-us"
+        },
+        "backgroundImage": {
+          "en-US": "https://res.cloudinary.com/uniformdev/image/upload/v1675157879/vNext%20Demos/Baseline/hero-2_gjqbfo.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "62idtt9VcaVLPwBps1Zqk8",
+        "type": "Entry",
+        "createdAt": "2023-03-03T11:30:06.063Z",
+        "updatedAt": "2023-03-03T11:31:08.735Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2023-03-03T11:31:08.735Z",
+        "firstPublishedAt": "2023-03-03T11:31:08.735Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "hero"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Welcome to baseline"
+        },
+        "buttonCopy": {
+          "en-US": "See our landing page"
+        },
+        "buttonLink": {
+          "en-US": "/landing-page"
+        },
+        "backgroundImage": {
+          "en-US": "https://res.cloudinary.com/uniformdev/image/upload/v1675157619/vNext%20Demos/Baseline/hero-1_vks69p.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "79eHqAV8HL7JK22czTOsbQ",
+        "type": "Entry",
+        "createdAt": "2023-03-03T11:32:33.347Z",
+        "updatedAt": "2023-03-03T15:19:34.297Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2023-03-03T15:19:34.297Z",
+        "firstPublishedAt": "2023-03-03T11:34:03.429Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "hero"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Find the perfect cup without leaving your home."
+        },
+        "buttonCopy": {
+          "en-US": "Read Post"
+        },
+        "buttonLink": {
+          "en-US": "/"
+        },
+        "backgroundImage": {
+          "en-US": "https://res.cloudinary.com/uniformdev/image/upload/v1675157963/vNext%20Demos/Baseline/hero-3_h8gytd.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "5maUJAP0h4e3O33U1USUvS",
+        "type": "Entry",
+        "createdAt": "2023-03-03T11:34:10.227Z",
+        "updatedAt": "2023-03-03T15:19:27.045Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2023-03-03T15:19:27.045Z",
+        "firstPublishedAt": "2023-03-03T11:35:07.193Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "hero"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Finally - the perfect barista coffee without leaving home."
+        },
+        "buttonCopy": {
+          "en-US": "Read Post"
+        },
+        "buttonLink": {
+          "en-US": "/"
+        },
+        "backgroundImage": {
+          "en-US": "https://res.cloudinary.com/uniformdev/image/upload/v1675158034/vNext%20Demos/Baseline/hero-4_qh2jg7.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "5jLebPQsniyCJWMtLTZlxK",
+        "type": "Entry",
+        "createdAt": "2023-03-03T11:37:53.204Z",
+        "updatedAt": "2023-03-03T11:38:21.318Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-03-03T11:38:21.318Z",
+        "firstPublishedAt": "2023-03-03T11:38:21.318Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "callToAction"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "The home of coffee obsessives"
+        },
+        "text": {
+          "en-US": "Welcome to JavaDrip. We are a boutique coffee company obsessed with the perfect cup of coffee. We believe that the perfect cup starts with the perfect bean and that those beans require the perfect brewing method. This means that we offer both high quality beans and products to meet any occasion and mood. Have a look around and let us know if you have any questions."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "5JvZF3XKF1TmOOQ3vgd1pr",
+        "type": "Entry",
+        "createdAt": "2023-03-03T11:38:38.936Z",
+        "updatedAt": "2023-03-03T11:39:09.874Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-03-03T11:39:09.874Z",
+        "firstPublishedAt": "2023-03-03T11:39:09.874Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "callToAction"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Taste the future"
+        },
+        "text": {
+          "en-US": "Combining the greatest traditions with cutting edge technology, the Smart Home Barista puts decades of coffee experience at your fingertips. By learning your tastes and assessing the beans, the smart barista adjusts the grind, pressure and length of each espresso shot to make sure it’s perfect every time."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "B9lb0U5XuQDa2SFl0wKB3",
+        "type": "Entry",
+        "createdAt": "2023-03-03T11:42:47.984Z",
+        "updatedAt": "2023-03-03T11:43:16.541Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-03-03T11:43:16.541Z",
+        "firstPublishedAt": "2023-03-03T11:43:16.541Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "accordion"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Frequently Asked Questions"
+        },
+        "description": {
+          "en-US": "If you can't find the answer to your question please reach out to support@javadrip.coffee."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "1rajF4rDgvChBiR9XPd3vL",
+        "type": "Entry",
+        "createdAt": "2023-03-03T11:46:06.304Z",
+        "updatedAt": "2023-03-03T11:46:16.577Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-03-03T11:46:16.577Z",
+        "firstPublishedAt": "2023-03-03T11:46:16.577Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "accordionItem"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "How smart is the Cervello di Caffè?"
+        },
+        "description": {
+          "en-US": "Java chicory, black doppio and roast cream mocha turkish strong. Blue mountain doppio black, chicory, sugar medium, single shot a wings blue mountain turkish. Viennese et, cinnamon, turkish lungo qui cappuccino kopi-luwak. Black, dripper, to go medium espresso lungo in, and plunger pot latte sweet redeye. Half and half, galão, single shot wings beans bar that con panna macchiato dark foam galão."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "6lQ4LeFNoeQKcZt4TyEJKb",
+        "type": "Entry",
+        "createdAt": "2023-03-03T11:46:28.671Z",
+        "updatedAt": "2023-03-03T11:46:41.459Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-03-03T11:46:41.459Z",
+        "firstPublishedAt": "2023-03-03T11:46:41.459Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "accordionItem"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Do you have guides on how to use the Cervello di Caffè?"
+        },
+        "description": {
+          "en-US": "Fair trade siphon crema extra, viennese qui, foam viennese siphon est so caramelization. Carajillo sit ut extra chicory aged instant crema chicory. Et, dark a cup, cortado, siphon at arabica flavour macchiato. Cream, at, acerbic redeye iced americano coffee white. To go et, steamed a café au lait, single origin aftertaste frappuccino blue mountain whipped."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "7O6rD0aZ5Urhw7ZabswYc",
+        "type": "Entry",
+        "createdAt": "2023-03-03T11:47:05.667Z",
+        "updatedAt": "2023-03-03T11:47:15.368Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-03-03T11:47:15.368Z",
+        "firstPublishedAt": "2023-03-03T11:47:15.368Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "accordionItem"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "What is JavaDrip doing to protect my privacy?"
+        },
+        "description": {
+          "en-US": "Barista et bar aftertaste, brewed variety filter turkish breve organic. Mug french press rich doppio barista redeye cream. Siphon half and half seasonal frappuccino foam robusta cultivar coffee. So froth, aftertaste bar, saucer sugar single shot caramelization aromatic. Espresso, saucer, breve café au lait, id cultivar pumpkin spice doppio viennese frappuccino doppio."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "6TPlP9nDRWvFtGS4rU0MZt",
+        "type": "Entry",
+        "createdAt": "2023-03-03T11:47:22.287Z",
+        "updatedAt": "2023-03-03T11:47:31.602Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-03-03T11:47:31.602Z",
+        "firstPublishedAt": "2023-03-03T11:47:31.602Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "accordionItem"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "What accessories do you offer for the Cervello di Caffè?"
+        },
+        "description": {
+          "en-US": "Arabica Acerbic Affogato Aftertaste Aged Americano And Aroma, flavour affogato At cortado french foam cappuccino, barista froth Cappuccino origin percolator au. Ristretto Au aftertaste brewed Aromatic saucer cortado Bar, Body viennese crema origin Brewed milk sweet french, coffee extraction aroma Cappuccino sit affogato et. Rich grounds at spice fair At Affogato id macchiato caramelization, saucer sugar trifecta shop Americano Aroma est. Brewed ut As brewed steamed Au espresso macchiato turkish wings id filter, rich beans affogato redeye shop and Americano so crema."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "49CR03uVeyBkchYqWFeFS",
+        "type": "Entry",
+        "createdAt": "2023-03-03T11:50:13.144Z",
+        "updatedAt": "2023-03-03T11:50:40.390Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-03-03T11:50:40.390Z",
+        "firstPublishedAt": "2023-03-03T11:50:40.390Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "contactForm"
+          }
+        }
+      },
+      "fields": {
+        "submitButtonText": {
+          "en-US": "Submit"
+        },
+        "successfulSubmitText": {
+          "en-US": "Thanks, we will reach back to you shortly!"
+        },
+        "errorSubmitText": {
+          "en-US": "Uh oh, something went wrong. Try again later. "
+        },
+        "successfulSubmitImage": {
+          "en-US": "https://res.cloudinary.com/uniformdev/image/upload/v1675162197/vNext%20Demos/Baseline/error-submit_ihbksu.svg"
+        },
+        "errorSubmitImage": {
+          "en-US": "https://res.cloudinary.com/uniformdev/image/upload/v1675162197/vNext%20Demos/Baseline/success-submit_uwyxpx.svg"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "5hIG7ROGQswIiitDm6M8fZ",
+        "type": "Entry",
+        "createdAt": "2023-03-03T12:13:06.638Z",
+        "updatedAt": "2023-03-03T12:13:22.502Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-03-03T12:13:22.502Z",
+        "firstPublishedAt": "2023-03-03T12:13:22.502Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "featuredCallout"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Four user profiles for full taste customization"
+        },
+        "description": {
+          "en-US": "You may love your family more than anything, but that doesn’t mean you love your coffee the same way. The Cervello di Caffè stores up to four taste profiles, which are applied automatically when you use your app or voice assistant to start the brewing process or can be set manually on the machine."
+        },
+        "image": {
+          "en-US": "https://res.cloudinary.com/uniformdev/image/upload/c_limit,f_auto,q_auto,w_504/v1675156336/vNext%20Demos/Baseline/about-item-2_ptdocq.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "5BbH0QI5yAZIpdlVSU7GcD",
+        "type": "Entry",
+        "createdAt": "2023-03-03T12:13:26.947Z",
+        "updatedAt": "2023-03-03T12:13:39.753Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-03-03T12:13:39.753Z",
+        "firstPublishedAt": "2023-03-03T12:13:39.753Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "featuredCallout"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "AI-optimized grinding and delivery ensures that every coffee is just how you like it"
+        },
+        "description": {
+          "en-US": "Not everyone has decades of experience selecting, roasting and grinding coffee - but that doesn’t mean they don’t deserve a perfect espresso every time. That’s why we’ve worked with the industry’s top experts to create an AI system that gives you the coffee you deserve."
+        },
+        "image": {
+          "en-US": "https://res.cloudinary.com/uniformdev/image/upload/c_limit,f_auto,q_auto,w_504/v1675156336/vNext%20Demos/Baseline/about-item-1_uffzr4.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "3o0BreZJBs7k8Vf4kOMHqT",
+        "type": "Entry",
+        "createdAt": "2023-03-03T12:13:46.168Z",
+        "updatedAt": "2023-03-03T12:14:06.577Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-03-03T12:14:06.577Z",
+        "firstPublishedAt": "2023-03-03T12:14:06.577Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "featuredCallout"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Cervello di Caffè"
+        },
+        "description": {
+          "en-US": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "buttonCopy": {
+          "en-US": "Read Post"
+        },
+        "buttonLink": {
+          "en-US": "/"
+        },
+        "image": {
+          "en-US": "https://res.cloudinary.com/uniformdev/image/upload/c_limit,f_auto,q_auto,w_504/v1675156336/vNext%20Demos/Baseline/featured-callout_bgkrd7.webp"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "1KlRV1UGZWwpMA5J5KtHOY",
+        "type": "Entry",
+        "createdAt": "2023-03-06T20:36:45.411Z",
+        "updatedAt": "2023-03-06T20:37:13.051Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-03-06T20:37:13.051Z",
+        "firstPublishedAt": "2023-03-06T20:37:13.051Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "callToAction"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Let us know how you have bean."
+        },
+        "text": {
+          "en-US": "See what we did there? 😀 But seriously, please let us know if you have any questions and we will get back with you shortly. Thank you."
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "17eATDg5fcEPk6fEECSFrG",
+        "type": "Asset",
+        "createdAt": "2023-02-21T20:58:56.367Z",
+        "updatedAt": "2023-02-21T20:59:49.202Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-02-21T20:59:49.202Z",
+        "firstPublishedAt": "2023-02-21T20:59:49.202Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Perfect Cup Thumbnail"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4v9xo98brk8z/17eATDg5fcEPk6fEECSFrG/bb1c396965c6cdd0698afb2cdbe2c4ec/perfectcup_article_thumb.jpg",
+            "details": {
+              "size": 41631,
+              "image": {
+                "width": 686,
+                "height": 338
+              }
+            },
+            "fileName": "perfectcup_article_thumb.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "6JeZz17jVwL0R5AsAEhGsm",
+        "type": "Asset",
+        "createdAt": "2023-02-21T21:02:13.742Z",
+        "updatedAt": "2023-02-21T21:02:34.999Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-02-21T21:02:34.999Z",
+        "firstPublishedAt": "2023-02-21T21:02:34.999Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Cuppa Thumbnail"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4v9xo98brk8z/6JeZz17jVwL0R5AsAEhGsm/354ee71d2e3a0fa2198c713b9b0c17ea/cuppa_article_thumb.jpg",
+            "details": {
+              "size": 216920,
+              "image": {
+                "width": 686,
+                "height": 338
+              }
+            },
+            "fileName": "cuppa_article_thumb.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "73713ftmlPdqamsa2PORzK",
+        "type": "Asset",
+        "createdAt": "2023-02-21T21:03:28.440Z",
+        "updatedAt": "2023-02-21T21:03:46.891Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-02-21T21:03:46.891Z",
+        "firstPublishedAt": "2023-02-21T21:03:46.891Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Beans Thumbnail"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4v9xo98brk8z/73713ftmlPdqamsa2PORzK/64b30505926b3a8d4eb1221d40bdef66/beans_article_thumb.jpg",
+            "details": {
+              "size": 327553,
+              "image": {
+                "width": 686,
+                "height": 338
+              }
+            },
+            "fileName": "beans_article_thumb.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "1BqjTT7VUdIg4lHOqjOaw4",
+        "type": "Asset",
+        "createdAt": "2023-02-21T21:04:42.511Z",
+        "updatedAt": "2023-02-21T21:04:56.932Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-02-21T21:04:56.932Z",
+        "firstPublishedAt": "2023-02-21T21:04:56.932Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Grinding Thumbnail"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4v9xo98brk8z/1BqjTT7VUdIg4lHOqjOaw4/9a2e6694db897331a3f0ef1d539ed2e4/grinding_article_thumb.jpg",
+            "details": {
+              "size": 205856,
+              "image": {
+                "width": 686,
+                "height": 338
+              }
+            },
+            "fileName": "grinding_article_thumb.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "672UDG3HsRwDy3XXssqcUI",
+        "type": "Asset",
+        "createdAt": "2023-02-21T21:05:42.611Z",
+        "updatedAt": "2023-02-21T21:05:57.677Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-02-21T21:05:57.677Z",
+        "firstPublishedAt": "2023-02-21T21:05:57.677Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "First Day Thumbnail"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4v9xo98brk8z/672UDG3HsRwDy3XXssqcUI/de47c16297535a175dc2b57535ce32ac/first_day_articles_thumb.jpg",
+            "details": {
+              "size": 161789,
+              "image": {
+                "width": 686,
+                "height": 338
+              }
+            },
+            "fileName": "first_day_articles_thumb.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "9ycAAKTDlqMpsXpgBv0r0",
+        "type": "Asset",
+        "createdAt": "2023-02-21T21:06:45.362Z",
+        "updatedAt": "2023-02-21T21:07:02.048Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-02-21T21:07:02.048Z",
+        "firstPublishedAt": "2023-02-21T21:07:02.048Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Accessories Thumbnail"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4v9xo98brk8z/9ycAAKTDlqMpsXpgBv0r0/b5310fb5d124f570ece8c92eb72f1105/accessories_articles_thumb.jpg",
+            "details": {
+              "size": 24610,
+              "image": {
+                "width": 686,
+                "height": 338
+              }
+            },
+            "fileName": "accessories_articles_thumb.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "3v7mxnCikGsK0ODJnpSzpM",
+        "type": "Asset",
+        "createdAt": "2023-02-21T21:07:20.072Z",
+        "updatedAt": "2023-02-21T21:07:40.666Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-02-21T21:07:40.666Z",
+        "firstPublishedAt": "2023-02-21T21:07:40.666Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Accessories"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4v9xo98brk8z/3v7mxnCikGsK0ODJnpSzpM/a37b1bc4e5dc074353a3a49658f87a2c/caffeeaccessories_article.jpg",
+            "details": {
+              "size": 379359,
+              "image": {
+                "width": 1704,
+                "height": 1074
+              }
+            },
+            "fileName": "caffeeaccessories_article.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "7lMfD8fBdHxNKFjPO4aQSW",
+        "type": "Asset",
+        "createdAt": "2023-02-21T21:12:11.720Z",
+        "updatedAt": "2023-02-21T21:12:30.806Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-02-21T21:12:30.806Z",
+        "firstPublishedAt": "2023-02-21T21:12:30.806Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Slow Drip Thumbnail"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4v9xo98brk8z/7lMfD8fBdHxNKFjPO4aQSW/3559a9048a009cbf4139b61ac57edb43/pourover_article_thumb.jpg",
+            "details": {
+              "size": 67564,
+              "image": {
+                "width": 686,
+                "height": 338
+              }
+            },
+            "fileName": "pourover_article_thumb.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "PGsh7il3fQHCJLyfv7Q8h",
+        "type": "Asset",
+        "createdAt": "2023-02-21T21:13:21.500Z",
+        "updatedAt": "2023-02-21T21:13:53.576Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-02-21T21:13:53.576Z",
+        "firstPublishedAt": "2023-02-21T21:13:53.576Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Experts Thumbnail"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4v9xo98brk8z/PGsh7il3fQHCJLyfv7Q8h/359ddf628493d44b99a1cf61e0e9cb39/experts_articles_thumb.jpg",
+            "details": {
+              "size": 443991,
+              "image": {
+                "width": 686,
+                "height": 338
+              }
+            },
+            "fileName": "experts_articles_thumb.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "2rUiIQNX4dxCS8qclCMjcF",
+        "type": "Asset",
+        "createdAt": "2023-02-21T21:14:09.193Z",
+        "updatedAt": "2023-02-21T21:14:31.749Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-02-21T21:14:31.749Z",
+        "firstPublishedAt": "2023-02-21T21:14:31.749Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Meet the experts"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4v9xo98brk8z/2rUiIQNX4dxCS8qclCMjcF/58920551f1feb1c33aef40cac299234b/Rectangle_724__1_.jpg",
+            "details": {
+              "size": 1840311,
+              "image": {
+                "width": 1686,
+                "height": 1074
+              }
+            },
+            "fileName": "Rectangle_724__1_.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "id": "1YyVIDRYgc9q9nmzvmt9a8",
+        "type": "Asset",
+        "createdAt": "2023-02-21T21:15:56.864Z",
+        "updatedAt": "2023-02-21T21:16:11.983Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-02-21T21:16:11.983Z",
+        "firstPublishedAt": "2023-02-21T21:16:11.983Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3LjDuoo7YdzImb1eOwQeBv"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Roma Thumbnail"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/4v9xo98brk8z/1YyVIDRYgc9q9nmzvmt9a8/596cdfbb72073cddbdcc19eb7743d941/Roma_article_thumb.jpg",
+            "details": {
+              "size": 135191,
+              "image": {
+                "width": 686,
+                "height": 338
+              }
+            },
+            "fileName": "Roma_article_thumb.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "3g5zTNmJLrqRVDGgCzPhwl",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "ca8679eb-9c5c-48c9-a846-ff4b7eb8b297"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2MtIfcXBEXWMClOFKG9hoK"
+          }
+        },
+        "createdAt": "2023-02-21T09:38:27Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2MtIfcXBEXWMClOFKG9hoK"
+          }
+        },
+        "updatedAt": "2023-02-21T09:38:27Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Author",
+      "description": "Allows editing of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "3gnQDhC53opSG3mM5fxGZX",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2MtIfcXBEXWMClOFKG9hoK"
+          }
+        },
+        "createdAt": "2023-02-21T09:38:28Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2MtIfcXBEXWMClOFKG9hoK"
+          }
+        },
+        "updatedAt": "2023-02-21T09:38:28Z"
+      }
+    },
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "3gpErMqkkc4zeFjXIll1iF",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2MtIfcXBEXWMClOFKG9hoK"
+          }
+        },
+        "createdAt": "2023-02-21T09:38:28Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2MtIfcXBEXWMClOFKG9hoK"
+          }
+        },
+        "updatedAt": "2023-02-21T09:38:28Z"
+      }
+    },
+    {
+      "name": "Freelancer",
+      "description": "Allows only editing of content they created themselves",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "delete"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "delete"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "equals": [
+                  {
+                    "doc": "sys.createdBy.sys.id"
+                  },
+                  "User.current()"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "3gqFEvccTUkTBpKiTMyk8x",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2MtIfcXBEXWMClOFKG9hoK"
+          }
+        },
+        "createdAt": "2023-02-21T09:38:28Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2MtIfcXBEXWMClOFKG9hoK"
+          }
+        },
+        "updatedAt": "2023-02-21T09:38:28Z"
+      }
+    },
+    {
+      "name": "Translator",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "3gsCTZX5eA5NcEIhy5vHNf",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "4v9xo98brk8z"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2MtIfcXBEXWMClOFKG9hoK"
+          }
+        },
+        "createdAt": "2023-02-21T09:38:28Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2MtIfcXBEXWMClOFKG9hoK"
+          }
+        },
+        "updatedAt": "2023-02-21T09:38:28Z"
+      }
+    }
+  ]
+}
